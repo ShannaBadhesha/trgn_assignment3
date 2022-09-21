@@ -19,11 +19,30 @@ This script will work if the phone number is in the following formats: +(country
 
 ### Usage
 
+```python3 ensg2hugo.py [-f][0-9] [file]```
 
 ### Description
 
+Create a dictionary, whereby you lookup the Ensembl name and replace it with the HUGO name.
+
+Since the ```Homo_sapiens.GRCh37.75.gtf``` file is too large, you will need to use ```curl``` to save the file.
+
+```curl http://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz --output Homo_sapiens.GRCh37.75.gtf.gz```
+``` gunzip Homo_sapiens.GRCh37.75.gtf.gz```
+
+The unit test will be: https://github.com/davcraig75/unit/blob/master/expres.anal.csv
+
 
 ### Known Issues
+
+Error found: 
+```TypeError                                 Traceback (most recent call last)
+Cell In [21], line 1
+----> 1 for text in "Homo_sapiens.GRCh37.75.gtf"("expression_analysis.tsv"):
+      2     ensembl= re.findall(pattern,text)
+      3     if ensemble in find:
+
+TypeError: 'str' object is not callable```
 
 ## Histogram.py
 

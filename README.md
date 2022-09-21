@@ -35,16 +35,8 @@ The unit test will be: https://github.com/davcraig75/unit/blob/master/expres.ana
 
 ### Known Issues
 
-Error found: ```<>:1: SyntaxWarning: 'str' object is not callable; perhaps you missed a comma?
-<>:1: SyntaxWarning: 'str' object is not callable; perhaps you missed a comma?
-/var/folders/fk/5gx_9wk104l42yf08jm0x5f40000gp/T/ipykernel_11446/1232127364.py:1: SyntaxWarning: 'str' object is not callable; perhaps you missed a comma?
-  for text in "Homo_sapiens.GRCh37.75.gtf"("expression_analysis.tsv"):
-/var/folders/fk/5gx_9wk104l42yf08jm0x5f40000gp/T/ipykernel_11446/1232127364.py:1: SyntaxWarning: 'str' object is not callable; perhaps you missed a comma?
-  for text in "Homo_sapiens.GRCh37.75.gtf"("expression_analysis.tsv"):
-/var/folders/fk/5gx_9wk104l42yf08jm0x5f40000gp/T/ipykernel_11446/1232127364.py:1: SyntaxWarning: 'str' object is not callable; perhaps you missed a comma?
-  for text in "Homo_sapiens.GRCh37.75.gtf"("expression_analysis.tsv"):
----------------------------------------------------------------------------
-TypeError                                 Traceback (most recent call last)
+Error found: 
+```TypeError                                 Traceback (most recent call last)
 Cell In [21], line 1
 ----> 1 for text in "Homo_sapiens.GRCh37.75.gtf"("expression_analysis.tsv"):
       2     ensembl= re.findall(pattern,text)
