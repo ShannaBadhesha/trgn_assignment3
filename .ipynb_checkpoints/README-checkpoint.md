@@ -44,6 +44,8 @@ Cell In [21], line 1
 
 TypeError: 'str' object is not callable```
 
+Pulling in string as a function
+
 ## Histogram.py
 
 ### Usage 
