@@ -162,14 +162,6 @@
    "source": [
     "plt.savefig(histogram_example.png)"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "c8ac0be2-6e4f-463d-be26-13c13994a0ab",
-   "metadata": {},
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {
