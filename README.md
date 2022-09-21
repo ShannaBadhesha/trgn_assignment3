@@ -35,13 +35,10 @@ The unit test will be: https://github.com/davcraig75/unit/blob/master/expres.ana
 
 ### Known Issues
 
-Error found: 
-```TypeError                                 Traceback (most recent call last)
-Cell In [21], line 1
+Error found: ```TypeError       Cell In [21], line 1
 ----> 1 for text in "Homo_sapiens.GRCh37.75.gtf"("expression_analysis.tsv"):
       2     ensembl= re.findall(pattern,text)
       3     if ensemble in find:
-
 TypeError: 'str' object is not callable```
 
 Pulling in string as a function
