@@ -1,0 +1,1 @@
+This is a sample file that I will be using to extract the random phone numbers 1-559-435-2422 and +45-924-242-5242. 
