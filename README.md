@@ -37,6 +37,8 @@ Creates a histogram as a png from a file using the specified column in a tab del
 
 ### Known Issues 
 
+```bad operand type for unary -: '_io.TextIOWrapper'``` after argparse
+
 ```sb.histogram(data= Histogram_example.tsv, x=age)
 
-AttributeError: module 'seaborn' has no attribute 'histogram'```
+AttributeError: module 'seaborn' has no attribute 'histogram'``` at the end
