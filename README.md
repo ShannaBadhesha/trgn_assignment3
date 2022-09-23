@@ -13,7 +13,7 @@ One-line per phone number formatted as [+][country code] ([AreaCode]) [local pho
 
 ### Known Issues
 
-This script will work if the phone number is in the following formats: +(country code)- 3 digits - 3 digits- 4 digits. 
+This script will work if the phone number is in the following formats: +(country code)- 3 digits - 3 digits- 4 digits. No other known issues. 
 
 ## Ensg2hugo.py
 
