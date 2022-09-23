@@ -35,13 +35,7 @@ The unit test will be: https://github.com/davcraig75/unit/blob/master/expres.ana
 
 ### Known Issues
 
-Error found: ```TypeError       Cell In [21], line 1
-----> 1 for text in "Homo_sapiens.GRCh37.75.gtf"("expression_analysis.tsv"):
-      2     ensembl= re.findall(pattern,text)
-      3     if ensemble in find:
-TypeError: 'str' object is not callable```
-
-Pulling in string as a function
+Script will create a blank new file instead of a file with the replaced Ensembl name. No errors written out. Is potentially matching the Ensemble name and HUGO name, but printing them out on to a new file. 
 
 ## Histogram.py
 
@@ -55,8 +49,4 @@ Creates a histogram as a png from a file using the specified column in a tab del
 
 ### Known Issues 
 
-```bad operand type for unary -: '_io.TextIOWrapper'``` after argparse
-
-```sb.histogram(data= Histogram_example.tsv, x=age) AttributeError: module 'seaborn' has no attribute 'histogram'``` at the end
-
-need to alter argparse to allow for optional -f and ensure output is histogram not bar graph
+Histogram prints out blank when running script. Error occurs from the arg_column when using the optional command. Reads incorrect column causing it to print out blank with skewed x and y axes.

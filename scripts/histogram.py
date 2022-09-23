@@ -1,11 +1,23 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import argparse
-import seaborn as sns
-parser = argparse.ArgumentParser(description="Optional column choice from file")
-parser.add_argument("-f", type= int, help= "column number", default= 2, dest= "column", choices= [1,3], required=True)
-parser.add_argument(-file, help= "file.tsv")
-args= parser.parse_args()
-file = open("Histogram_example.tsv")
-pd.read_table("Histogram_example.tsv")
-sns.histogram(data= "Histogram_example.tsv", x="age")
+import csv
+import sys
+with open("Histogram_example.tsv") as f:
+    read_tsv= csv.reader(f, delimiter="\t")
+if len(sys.argv) <2:
+    print("missing file name")
+    exit()
+filename= sys.argv[0]
+arg_column= sys.argv[1]
+column = 2
+if arg_column.startswith ('-f'):
+    column = arg_column [2:]
+elif not arg_column.startswith ('-f'):
+    column = 2
+df= pd.read_table("Histogram_example.tsv")
+datafile= sys.argv[2]
+with open(sys.argv[2]) as f:
+    plt.hist("Histogram_example.tsv",["arg_column"])
+    plt.grid(False)
+    plt.show()
+plt.savefig('histogram_example.png')
